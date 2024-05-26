@@ -1,6 +1,6 @@
 [package]
 name = "str_crypter"
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 authors = ["Flux Sec <fluxsec@proton.me>"]
 description = "A macro library for XOR encryption and decryption of strings at compile time, meaning no cleartext strings will be in your release binary (when using the macro). The encrypted strings will be decoded at runtime."
@@ -9,5 +9,8 @@ repository = "https://github.com/0xflux/str_crypter"
 documentation = "https://docs.rs/str_crypter"
 readme = "README.md"
 keywords = ["string", "encryption", "redteam", "cyber"]
+
+[lib]
+crate-type = ["lib"] 
 
 [dependencies]
