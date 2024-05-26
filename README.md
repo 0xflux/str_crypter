@@ -5,7 +5,7 @@
 ## Usage
 
 ```rust
-use str_crypter::{xor_encrypt, decrypt_string, sc};
+use str_crypter::{decrypt_string, sc};
 
 fn main() {
     let encrypted_str: String = match sc!("Hello world!", 20) {
