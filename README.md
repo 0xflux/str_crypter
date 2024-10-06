@@ -5,15 +5,11 @@
 ## Usage
 
 ```rust
-use str_crypter::{decrypt_string, sc};
+use str_crypter::sc;
 
 fn main() {
-    let encrypted_str: String = match sc!("Hello world!", 20) {
-        Ok(s) => s,
-        Err(e) => panic!("Decryption failed: {:?}", e),
-    };
-
-    println!("Decrypted string: {}", encrypted_str);
+    let decrypted_str = sc!("Hello world!", 20);
+    println!("Decrypted string: {}", decrypted_str);
 }
 ```
 
@@ -23,7 +19,7 @@ Add `str_crypter` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-str_crypter = "1.0.1"
+str_crypter = "2.0.1"
 ```
 
 Or use the command `cargo add str_crypter`
