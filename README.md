@@ -23,7 +23,7 @@ Add `str_crypter` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-str_crypter = "1.0.1"
+str_crypter = "1.0.3"
 ```
 
 Or use the command `cargo add str_crypter`
